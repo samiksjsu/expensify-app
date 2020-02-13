@@ -1,0 +1,27 @@
+// Notice the underscore. It defines partials.
+// which means, it contains part of the application
+
+// 1rem = 16px
+// So, we want a base 10 system 16 * 0.625 = 10.
+// So, 1 rem will now be 10px
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif; // Fallbacks, if first not available go to second and continue
+  font-size: $m-size;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed
+}
+
+.is-active {
+  font-weight: bold;
+}
